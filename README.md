@@ -14,11 +14,12 @@ Lets write some basic script to check disk usage and cpu usage. Preview the <cod
 diff and patch Cheat Sheet
 diff
 diff is used to find differences between two files. On its own, it’s a bit hard to use; instead, use it with diff -u to find lines which differ in two files:
-
+<code>
 diff -u
+</code>
 diff -u is used to compare two files, line by line, and have the differing lines compared side-by-side in the same output. See below:
 
-
+<code>
 ~$ cat menu1.txt 
 Menu1:
 
@@ -26,7 +27,9 @@ Apples
 Bananas
 Oranges
 Pears
+</code>
 
+<code>
 ~$ cat menu2.txt 
 Menu:
 
@@ -34,7 +37,9 @@ Apples
 Bananas
 Grapes
 Strawberries
+</code>
 
+<code>
 ~$ diff -u menu1.txt menu2.txt 
 --- menu1.txt   2019-12-16 18:46:13.794879924 +0900
 +++ menu2.txt   2019-12-16 18:46:42.090995670 +0900
@@ -48,10 +53,12 @@ Strawberries
 -Pears
 +Grapes
 +Strawberries
+</code>
 
 Patch
 Patch is useful for applying file differences. See the below example, which compares two files. The comparison is saved as a .diff file, which is then patched to the original file!
 
+<code>
 ~$ cat hello_world.txt 
 Hello World
 ~$ cat hello_world_long.txt 
@@ -72,3 +79,4 @@ patching file hello_world.txt
 Hello World
 
 It's a wonderful day!
+</code>
