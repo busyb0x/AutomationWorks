@@ -3,6 +3,8 @@
 Created on Sun Apr 26 17:37:11 2020
 File Name: disk_cpu.py
 
+This is a script to check disk and cpu usage.
+
 @author: BusyB0x
 """
 #!/usr/bin/env python3
